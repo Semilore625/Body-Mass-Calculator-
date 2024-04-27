@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/466bc2d703.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>BMI</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="max-w-[1700px] mx-auto">
+      <section class="lg:relative lg:h-screen px-8 lg:px-20">
+        <div class="flex flex-col lg:flex-row flex-wrap">
+          <div
+            class="flex flex-col justify-center flex-wrap text-center lg:text-left bg-gradient-to-r from-white to-blue-100 py-50 lg:w-[60%] min-h-[200px] lg:h-screen rounded-br-[2rem] lg:absolute inset-y-0 text-[#333]"
+          >
+            <h1 class="text-5xl lg:text-7xl font-semibold">
+              Body Mass <br />
+              Index Calculator
+            </h1>
+            <p class="flex flex-wrap lg:w-[60%] lg:mt-8 p-8 sm:p-3">
+              Better understand your weight in relation to your height using our
+              Body Mass Index (BMI) calculator. While BMI is not the sole
+              determinant of healthy weight, it offers valuable starting point
+              to evaluate your overall health and wellbeing.
+            </p>
+          </div>
+          <div
+            class="details lg:w-[40%] bg-white lg:absolute lg:left-[50%] lg:top-[ 50%] p-4 rounded drop-shadow lg:mt-[15%]"
+          >
+            <form action="" class="relative">
+              <h3 class="text-2xl font-semibold my-4">
+                Enter your details below
+              </h3>
+              <div
+                class="flex justify-between w-[50%] py-3 text-xl text-[#333]"
+              >
+                <label for="metric" class="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="type"
+                    id="metric"
+                    checked
+                    class="cusor-pointer w-5 h-5 border-none outline-none"
+                  />
+                  Metric
+                </label>
+
+                <label for="imperial" class="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="type"
+                    id="imperial"
+                    class="cusor-pointer w-5 h-5"
+                  />
+                  Imperial
+                </label>
+              </div>
+
+              <div class="flex items-center gap-4 my-10">
+                <div class="">
+                  <label for="" class="my-8 mb-3">Height </label>
+                  <div class="relative">
+                    <p
+                      class="absolute text-blue-600 font-bold text-xl right-4 bottom-2"
+                    >
+                      cm
+                    </p>
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      placeholder="0 "
+                      class="border-2 px-2 py-3 rounded-md"
+                    />
+                  </div>
+                </div>
+                <div class="">
+                  <label for="" class="my-8 mb-8">Weight</label>
+                  <div class="relative">
+                    <p
+                      class="absolute text-blue-600 font-bold text-xl right-4 bottom-2"
+                    >
+                      kg
+                    </p>
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      placeholder="0"
+                      class="border-2 px-2 py-3 rounded-md"
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div
+              class="bg-gradient-to-r from-blue-600 to-blue-400 rounded-r-full w-[100%] p-8 text-white"
+            >
+              <h2 class="text-2xl">Welcome!</h2>
+              <p>
+                Enter you height and weight and you'll see your BMI results here
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="px-8 lg:px-20">
+        <div
+          class="flex justify-center flex-wrap items-center text-[#333] mt-10 lg:mt-0 border-2 w-full"
+        >
+          <div class="w-full sm:w-[50%] rounded-lg relative">
+            <div
+              class="w-[300px] lg:w-[370px] h-[250px] bg-blue-100 rounded-lg absolute -z-10 bottom-0"
+            ></div>
+            <img src="maneats.png" alt="" class="" />
+          </div>
+          <div class="w-full sm:w-[50%] p-4 lg:self-end">
+            <p class="text-3xl lg:text-5xl font-semibold text-wrap">
+              What your BMI result means
+            </p>
+            <p class="mt-8 text-xl">
+              A BMI range of 18.5 to 24.9 is considered a healthy weight.
+              Maintaining a healthy weight may lower your chances of experiences
+              health issues later on, such as obesity and type 2 diabetes. Aim
+              for nutritious diet with reduced fat and sugar content,
+              incorporating ample fruits and vegetables. Additonally, strive for
+              regular physical activity, ideally about 30 minuites daily for
+              five days a week.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="flex flex-col lg:flex-row px-8 lg:px-20 py-10 justify-start gap-8 bg-[#f6f9fe]"
+      >
+        <div class="lg:w-[30%]">
+          <div
+            class="flex flex-row lg:flex-col items-center lg:items-start gap-4"
+          >
+            <i
+              class="fa-solid fa-bowl-food text-pink-500 border-2-pink-100 bg-pink-200 text-xl p-3 rounded-full"
+            ></i>
+            <div class="">
+              <h4 class="font-bold mb-3 text-xl text-gray-600">
+                Healthy eating
+              </h4>
+              <p>
+                Healthy eating prormotes weight control,disease prevention,
+                better digestion, immunity, mental clarity and mood.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-[30%]">
+          <div
+            class="flex flex-row lg:flex-col items-center lg:items-start gap-4"
+          >
+            <i
+              class="fa-solid fa-dumbbell text-orange-300 text-xl border-2-orange-100 bg-orange-100 p-3 rounded-full mb-3 mr-4"
+            ></i>
+            <div class="">
+              <h4 class="font-bold mb-3 text-xl text-gray-600">
+                Regular exercise
+              </h4>
+              <p>
+                Exercise improves fitness, aids wieght control, elevates mood,
+                and reduces disease risk, fostering wellness and longevity.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-[30%]">
+          <div
+            class="flex flex-row lg:flex-col items-center lg:items-start gap-4"
+          >
+            <i
+              class="fa-solid fa-moon text-green-300 border-2-green-100 bg-green-100 text-xl p-3 rounded-full mb- mr-4"
+            ></i>
+            <div class="">
+              <h4 class="font-bold mb-3 text-xl text-gray-600">
+                Adequate sleep
+              </h4>
+              <p>
+                Sleep enhances mental clarity, emotional stability, and physical
+                wellness, promoting overall restoration and rejuvenation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="lg:px-20 py-10 bg-gradient-to-r from-white to-blue-100 h-screen"
+      >
+        <div class="lg:flex relative">
+          <div class="flex flex-col items-center lg:items-start mb-8">
+            <h4 class="text-5xl font-semibold text-wrap lg:mb-3">
+              Limitations of BMI
+            </h4>
+            <p class="lg:w-[40%] text-center lg:text-left p-4">
+              Although BMI is often a prectical indicator of healthy weight, it
+              is not suitedfor every person. Specific groups should carefully
+              consider their BMI outcomes, and in certain cases, the measurement
+              may not be beneficial to use.
+            </p>
+          </div>
+          <div class="hidden lg:block absolute right-3 w-[60%]">
+            <div class="gender flex justify-around items-center">
+              <div class="w-[35%] p-4 rounded shadow bg-white">
+                <div class="flex items-center gap-4 my-4">
+                  <i
+                    class="fa-solid fa-mars-and-venus text-orange-300 text-4xl"
+                  ></i>
+                  <h4 class="font-bold mb-3 text-xl text-gray-600">Gender</h4>
+                </div>
+                <p class="">
+                  The development and body fat composition of girls and boys
+                  vary with age. Consequently, a child's age and gender are
+                  considered when evaluating their BMI.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex justify-center items-center gap-8 my-8">
+              <div class="age w-[35%] bg-white">
+                <div class="p-4 rounded shadow">
+                  <div class="flex items-center gap-4 my-4">
+                    <i
+                      class="fa-solid fa-cake-candles text-green-200 text-4xl"
+                    ></i>
+                    <h4 class="font-bold mb-3 text-xl text-gray-600">Age</h4>
+                  </div>
+                  <p class="">
+                    In aging individuals, increased body fat and muscle loss may
+                    cause BMI to underestimate body fat content.
+                  </p>
+                </div>
+              </div>
+
+              <div class="muscle w-[35%] bg-white">
+                <div class="p-4 rounded shadow">
+                  <div class="flex items-center gap-4 my-4">
+                    <i
+                      class="fa-solid fa-dumbbell text-purple-300 text-3xl"
+                    ></i>
+                    <h4 class="font-bold mb-3 text-xl text-gray-600">Muscle</h4>
+                  </div>
+                  <p class="">
+                    BMI mat misclassify mascluar individuals as overweight or
+                    obese, as it doesn't differentiate muscle from fat.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex justify-start items-center gap-8 my-8">
+              <div class="pregenancy w-[35%] bg-white">
+                <div class="p-4 rounded shadow">
+                  <div class="flex items-center gap-4 my-4">
+                    <i class="fa-solid fa-baby text-yellow-200 text-4xl"></i>
+                    <h4 class="font-bold mb-3 text-xl text-gray-600">
+                      Pregenancy
+                    </h4>
+                  </div>
+                  <p class="">
+                    Expectant mothers experience weight gain due to their
+                    growing baby. Maintaining a healthy pre-pregenancy BMI is
+                    advisable to minimise health risks for both mother amd
+                    child.
+                  </p>
+                </div>
+              </div>
+
+              <div class="race w-[35%] bg-white">
+                <div class="p-4 rounded shadow">
+                  <div class="flex items-center gap-4 my-4">
+                    <i class="fa-solid fa-person text-pink-200 text-4xl"></i>
+                    <h4 class="font-bold mb-3 text-xl text-gray-600">Race</h4>
+                  </div>
+                  <p class="">
+                    Certain health concerns may affect individuals of some Black
+                    and Asian origins at lower BMI tha others. To learn more, it
+                    is advised to discuss this with your GP or practice nurse.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:hidden">
+            <div class="flex justify-center items-center flex-wrap gap-8 my-8">
+              <div
+                class="gender shadow w-full sm:w-[40%] bg-white h-[215px] rounded-lg p-8"
+              >
+                <div class="flex items-center gap-4 my-4">
+                  <i
+                    class="fa-solid fa-mars-and-venus text-orange-300 text-4xl"
+                  ></i>
+                  <h4 class="font-bold mb-3 text-xl text-gray-600">Gender</h4>
+                </div>
+                <p class="">
+                  The development and body fat composition of girls and boys
+                  vary with age. Consequently, a child's age and gender are
+                  considered when evaluating their BMI.
+                </p>
+              </div>
+
+              <div
+                class="age w-full sm:w-[40%] bg-white h-[215px] shadow rounded-lg"
+              >
+                <div class="rounded p-8">
+                  <div class="flex items-center gap-4 my-4">
+                    <i
+                      class="fa-solid fa-cake-candles text-green-200 text-4xl"
+                    ></i>
+                    <h4 class="font-bold mb-3 text-xl text-gray-600">Age</h4>
+                  </div>
+                  <p class="">
+                    In aging individuals, increased body fat and muscle loss may
+                    cause BMI to underestimate body fat content.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex justify-center items-center flex-wrap gap-8 my-8">
+              <div
+                class="muscle w-full sm:w-[40%] h-[215px] bg-white shadow rounded-lg"
+              >
+                <div class="p-4 rounded">
+                  <div class="flex items-center gap-4 my-4">
+                    <i
+                      class="fa-solid fa-dumbbell text-purple-300 text-3xl"
+                    ></i>
+                    <h4 class="font-bold mb-3 text-xl text-gray-600">Muscle</h4>
+                  </div>
+                  <p class="">
+                    BMI mat misclassify mascluar individuals as overweight or
+                    obese, as it doesn't differentiate muscle from fat.
+                  </p>
+                </div>
+              </div>
+              <div class="pregenancy w-full sm:w-[40%] bg-white rounded-lg">
+                <div class="p-4 rounded shadow">
+                  <div class="flex items-center gap-4 my-4">
+                    <i class="fa-solid fa-baby text-yellow-200 text-4xl"></i>
+                    <h4 class="font-bold mb-3 text-xl text-gray-600">
+                      Pregenancy
+                    </h4>
+                  </div>
+                  <p class="">
+                    Expectant mothers experience weight gain due to their
+                    growing baby. Maintaining a healthy pre-pregenancy BMI is
+                    advisable to minimise health risks for both mother amd
+                    child.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex justify-center items-center gap-8 my-8">
+              <div class="race w-full sm:w-[40%] bg-white">
+                <div class="p-4 rounded shadow">
+                  <div class="flex items-center gap-4 my-4">
+                    <i class="fa-solid fa-person text-pink-200 text-4xl"></i>
+                    <h4 class="font-bold mb-3 text-xl text-gray-600">Race</h4>
+                  </div>
+                  <p class="">
+                    Certain health concerns may affect individuals of some Black
+                    and Asian origins at lower BMI tha others. To learn more, it
+                    is advised to discuss this with your GP or practice nurse.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
