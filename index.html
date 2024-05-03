@@ -63,34 +63,36 @@
 
               <div class="flex items-center gap-4 my-10">
                 <div class="">
-                  <label for="" class="my-8 mb-3">Height </label>
+                  <label for="height" class="my-8 mb-3">Height </label>
                   <div class="relative">
                     <p
+                      id="heightUnit"
                       class="absolute text-blue-600 font-bold text-xl right-4 bottom-2"
                     >
                       cm
                     </p>
                     <input
                       type="text"
-                      name=""
-                      id=""
+                      name="height"
+                      id="height"
                       placeholder="0 "
                       class="border-2 px-2 py-3 rounded-md"
                     />
                   </div>
                 </div>
                 <div class="">
-                  <label for="" class="my-8 mb-8">Weight</label>
+                  <label for="weight" class="my-8 mb-8">Weight</label>
                   <div class="relative">
                     <p
+                      id="weightUnit"
                       class="absolute text-blue-600 font-bold text-xl right-4 bottom-2"
                     >
                       kg
                     </p>
                     <input
                       type="text"
-                      name=""
-                      id=""
+                      name="weight"
+                      id="weight"
                       placeholder="0"
                       class="border-2 px-2 py-3 rounded-md"
                     />
@@ -111,7 +113,7 @@
       </section>
       <section class="px-8 lg:px-20">
         <div
-          class="flex justify-center flex-wrap items-center text-[#333] mt-10 lg:mt-0 border-2 w-full"
+          class="flex justify-center flex-wrap items-center text-[#333] mt-10 lg:mt-0 w-full"
         >
           <div class="w-full sm:w-[50%] rounded-lg relative">
             <div
@@ -384,4 +386,6 @@
       </section>
     </div>
   </body>
+
+  <script src="index.js"></script>
 </html>
